@@ -1,5 +1,5 @@
 # Fault32
-Roblox hardware simulation.
+Roblox hardware simulation that gives players an ability to connecting various devices (RAM/CPU/Screen/etc) on pin-level.
 
 ## Join the Community
 - Discord: [link](https://discord.gg/4U8tvAXTg3)
