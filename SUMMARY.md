@@ -5,10 +5,27 @@
 ## Fault×32 Guide
 
 * [Coming Soon](fault-32-guide/coming-soon.md)
+* [General Theory](fault-32-guide/general-theory/README.md)
+  * [For Begginers](fault-32-guide/general-theory/for-begginers/README.md)
+    * [Encoding formats](fault-32-guide/general-theory/for-begginers/encoding-formats.md)
+    * [Algorithm](fault-32-guide/general-theory/for-begginers/algorithm.md)
+    * [Logic operations](fault-32-guide/general-theory/for-begginers/logic-operations.md)
+    * [Aithmetic Operations](fault-32-guide/general-theory/for-begginers/aithmetic-operations.md)
+  * [Hardware Basics](fault-32-guide/general-theory/hardware-basics/README.md)
+    * [CPU](fault-32-guide/general-theory/hardware-basics/cpu.md)
+    * [Memory](fault-32-guide/general-theory/hardware-basics/memory.md)
+    * [I/O Devices](fault-32-guide/general-theory/hardware-basics/i-o-devices.md)
+    * [Assembly](fault-32-guide/general-theory/hardware-basics/assembly.md)
+* [Inside Fault×32](fault-32-guide/inside-fault-32.md)
 
-## Fault32ASM
+## Fault32-ASM
 
-* [in progress](fault32asm/in-progress.md)
+* [in progress](fault32-asm/in-progress.md)
+* [About F32-ASM](fault32-asm/about-f32-asm.md)
+* [F32-ASM Instruction Formats](fault32-asm/f32-asm-instruction-formats.md)
+* [F32-ASM Primitive](fault32-asm/f32-asm-primitive.md)
+* [F32-ASM Macros](fault32-asm/f32-asm-macros.md)
+* [F32-ASM X](fault32-asm/f32-asm-x.md)
 
 ## Virtual Hardware
 
