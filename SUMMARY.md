@@ -16,14 +16,16 @@
     * [Memory](fault-32-guide/general-theory/hardware-basics/memory.md)
     * [I/O Devices](fault-32-guide/general-theory/hardware-basics/i-o-devices.md)
     * [Assembly](fault-32-guide/general-theory/hardware-basics/assembly.md)
-* [Inside Fault×32](fault-32-guide/inside-fault-32.md)
+* [Inside Fault×32](fault-32-guide/inside-fault-32/README.md)
+  * [F32ASM Guide](fault-32-guide/inside-fault-32/f32asm-guide.md)
 
 ## Fault32-ASM
 
 * [in progress](fault32-asm/in-progress.md)
 * [About F32-ASM](fault32-asm/about-f32-asm.md)
-* [F32-ASM Instruction Formats](fault32-asm/f32-asm-instruction-formats.md)
-* [F32-ASM Primitive](fault32-asm/f32-asm-primitive.md)
+* [F32-ASM Instruction Types](fault32-asm/f32-asm-instruction-types.md)
+* [F32-ASM Primitive](fault32-asm/f32-asm-primitive/README.md)
+  * [Instruction Encoding Table](fault32-asm/f32-asm-primitive/instruction-encoding-table.md)
 * [F32-ASM Macros](fault32-asm/f32-asm-macros.md)
 * [F32-ASM X](fault32-asm/f32-asm-x.md)
 

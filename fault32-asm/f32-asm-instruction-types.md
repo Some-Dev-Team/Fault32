@@ -3,9 +3,9 @@ description: Wiki
 icon: file-lines
 ---
 
-# F32-ASM Instruction Formats
+# F32-ASM Instruction Types
 
-This page describes what instruction formats does [Broken link](/broken/pages/bYd0rCj72zWulnWs2jaN "mention") has and how they are mapped in 32bit word. This page is made to provide better understanding about how is F32-ASM code is represented and converted into binary.
+This page describes what instruction types [Broken link](/broken/pages/bYd0rCj72zWulnWs2jaN "mention") has and how they are mapped in 32bit word. This page is made to provide better understanding about how is F32-ASM code is represented and converted into binary.
 
 ## R-Type (Register-Register)
 
@@ -104,11 +104,28 @@ Instructions with a _large immediate_, typically 20 bits.
 
 Unconditional jumps with link.
 
-| Bit ranges | Field  | Description                        |
-| ---------- | ------ | ---------------------------------- |
-| 0-6        | opcode | Operation code (instruction class) |
-| 7-11       | rd     | Destination register               |
-| 14-12      | funct3 | Operation subtype                  |
-| 15-19      | rs1    | Source register 1                  |
-| 20-24      | rs2    | Source register 2                  |
-| 25-31      | funct7 | Type of the operation (ADD vs SUB) |
+| Bit ranges | Field       | Description                        |
+| ---------- | ----------- | ---------------------------------- |
+| 0-6        | opcode      | Operation code (instruction class) |
+| 7-11       | rd          | Destination register               |
+| 12–19      | imm\[12:19] | part of the immediate              |
+| 20         | imm\[11]    | part of the immediate              |
+| 21-30      | imm\[1:10]  | part of the immediate              |
+| 31         | imm\[20]    | part of the immediate              |
+
+***
+
+## OPCODES
+
+| Instruction Class | Opcode (binary) |
+| ----------------- | :-------------: |
+| LOAD              |     0000011     |
+| STORE             |     0100011     |
+| OP (R-Type ALU)   |     0110011     |
+| OP-IMM            |     0010011     |
+| LUI Instruction   |     0110111     |
+| AUIPC Instruction |     0010111     |
+| BRANCH            |     1100011     |
+| JAL               |     1101111     |
+| JALR              |     1100111     |
+| SYSTEM            |     1110011     |
