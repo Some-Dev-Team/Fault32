@@ -1,0 +1,84 @@
+# Fault×32 Collaborative Source License (FCSL) — Version 1.1
+
+**Plain-English summary:**  
+This project — **Fault×32** — is owned and stewarded by **UAGoose** and the community represented by **Some Dev Team**.
+
+You may read, study, run, and modify the code for **personal, educational, and private** purposes. You may publish tutorials (including source code) as long as they do not contain illegal content, exploits affecting real systems, or anything that causes harm. You may create independent projects inspired by Fault×32 — but you may **not** publish, distribute, fork, or monetize copies or “near-copies” of Fault×32 or its core assets without explicit written permission from the Project Owner.
+
+Logos and branding may be used in images, memes, or educational contexts, **but not for public projects or commercial purposes**.
+
+If you contribute code or assets and a pull request is merged, you grant the Project Owner a perpetual license to use that contribution inside Fault×32 under these rules. Attribution for contributors must be present in `README` and `CREDITS.md`. Trademarks, logos, and the project name are reserved.
+
+---
+
+## Legal Text
+
+**Fault×32 Collaborative Source License (FCSL) — Version 1.1**  
+Copyright (c) 2026 UAGoose (Some Dev Team)  
+Governing law: Slovenia
+
+### 1. Definitions
+
+- “Project” means the software, assets, documentation, and systems comprising Fault×32.
+- “Project Owner” means UAGoose and authorized maintainers operating under the project.
+- “Contributor” means an individual who submits code, assets, or documentation to the official Project repository and accepts the Contributor terms.
+- “Private Use” means use that is not public, distributed, or made accessible to the general public.
+- “Public Distribution” means publishing, posting, selling, mirroring, or otherwise making available the Project or substantially similar derivatives to the public.
+- “Fork” or “clone” refers to any copy of the Project repository, including modified versions, whether hosted publicly or privately, that reproduces the Project’s core system, logic, or assets.
+
+### 2. Ownership
+
+All rights, title, and interest in and to the Project (including core code, branding, logos, and foundational libraries developed by the Project Owner) remain with the Project Owner. This license does not transfer ownership.
+
+### 3. Rights Granted
+
+The Project Owner grants you a limited, non-exclusive, non-transferable, revocable, worldwide right to:
+
+- Read, study, run, and modify the Project for **Private Use** and educational purposes.
+- Publish tutorials, documentation, and explanatory materials (including source code snippets) that do not facilitate illegal activity, exploits, or other harm.
+- Submit contributions to the official Project for review and possible inclusion.
+
+### 4. Restrictions
+
+Unless you have **explicit written permission** from the Project Owner, you may NOT:
+
+- Publicly distribute, republish, mirror, repackage, fork, or otherwise make available any copy of the Project (modified or unmodified) or any “near-copy” derivative.
+- Create or operate a public service, platform, or competing product that is a substantially similar implementation of the Project’s core system and user experience.
+- Monetize, sell, sublicense, or otherwise commercially exploit the Project or derivative works.
+- Remove, alter, or obfuscate attribution, copyright, or license notices included by the Project Owner.
+- Use Project trademarks, logos, or branding for your own public or commercial projects without permission.
+- Use code or assets from the Project in a public project without permission if that code depends on or incorporates Project-owned libraries.
+
+### 5. Contributions
+
+- Contributors retain copyright in their original submissions.
+- By submitting a contribution (pull request) which is merged, the Contributor grants the Project Owner a perpetual, irrevocable, royalty-free, worldwide license to use it in the Project.
+- Contributors may reuse their own submitted code outside the Project, provided it does not include Project-owned libraries.
+- Private modifications remain the contributor’s property, but public distribution is subject to restrictions in Section 4.
+
+### 6. Tutorials and Educational Content
+
+- Tutorials, blog posts, presentations, and other educational materials may include source code snippets, provided they do not facilitate illegal activity, exploits, or harm outside the Project. Full repository copies may **not** be published without permission.
+
+### 7. Trademarks and Branding
+
+- All rights in project names, logos, and trademarks are reserved. Logos/images may be used for memes, educational content, or illustrations **but not for commercial projects or public forks**.
+
+### 8. Private Forks and Closed Testing
+
+- Any fork, clone, or copy of the Project requires **explicit written permission**, even if private. Read-only forks for learning with attribution may be permitted at the Project Owner’s discretion.
+
+### 9. Enforcement and Termination
+
+- Breach of this license terminates rights immediately. The Project Owner may pursue legal remedies, revoke access, or issue takedown requests.
+
+### 10. Warranty Disclaimer and Liability Limitation
+
+- THE PROJECT IS PROVIDED “AS IS” WITHOUT WARRANTIES OF ANY KIND.
+- THE PROJECT OWNER SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES. Aggregate liability is limited to amounts paid in the prior 12 months, if any.
+
+---
+
+## Contributor Note
+
+Contribute if you want to help build Fault×32. If your PR lands, the project can use it however it needs; you keep credit, but the contribution becomes part of the project under these rules. Public use, forks, or monetization of our code requires permission — we’re friendly, just don’t be a clone-factory.
