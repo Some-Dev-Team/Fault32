@@ -7,12 +7,15 @@ export type PinListener = (newPowerLevel: PowerLevel) -> ()
 export type PinListenerDisconnect = () -> ()
 
 type PinFields = {
+	autoPropagate: boolean,
+
 	_listeners: { PinListener },
 	_highSources: { [string]: true },
 	_highCount: number,
 	_lastNotifiedLevel: PowerLevel,
 
 	Read: (self: Pin) -> PowerLevel,
+	Propagate: (self: Pin) -> (),
 	OnChange: (self: Pin, listener: PinListener) -> PinListenerDisconnect,
 
 	HoldHigh: (self: Pin, sourceId: string) -> (),
@@ -27,8 +30,10 @@ Pin.PowerLevels = {
 	LOW = false,
 }
 
-function Pin.new(): Pin
+function Pin.new(autoPropagate: boolean?): Pin
 	local self = setmetatable({} :: PinFields, Pin)
+
+	self.autoPropagate = if autoPropagate == nil then true else autoPropagate
 
 	self._listeners = {}
 	self._highSources = {}
@@ -56,6 +61,10 @@ function Pin:_FireListeners()
 	end
 end
 
+function Pin:Propagate()
+	self:_FireListeners()
+end
+
 function Pin:HoldHigh(sourceId: string)
 	if self._highSources[sourceId] then
 		return
@@ -63,7 +72,10 @@ function Pin:HoldHigh(sourceId: string)
 
 	self._highSources[sourceId] = true
 	self._highCount += 1
-	self:_FireListeners()
+
+	if self.autoPropagate then
+		self:_FireListeners()
+	end
 end
 
 function Pin:Release(sourceId: string)
@@ -73,7 +85,10 @@ function Pin:Release(sourceId: string)
 
 	self._highSources[sourceId] = nil
 	self._highCount -= 1
-	self:_FireListeners()
+
+	if self.autoPropagate then
+		self:_FireListeners()
+	end
 end
 
 function Pin:OnChange(listener: PinListener): PinListenerDisconnect
